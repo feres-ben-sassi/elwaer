@@ -24,8 +24,8 @@ app.use("/api", require("./routes/productRouter"));
 app.use("/api", require("./routes/paymentRouter"));
 
 // Connect to mongodb
-// const URI = process.env.MONGODB_URL
-const URI = "mongodb://localhost:27017/reparation";
+const URI = process.env.MONGODB_URL;
+// const URI = "mongodb://localhost:27017/reparation";
 mongoose.connect(
   URI,
   {
